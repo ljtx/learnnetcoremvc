@@ -7,8 +7,11 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Models;
 using NetCoreMvc.Data;
 using NetCoreMvc.Models;
+using ProjectContracts;
+using ProjectDao;
 
 namespace NetCoreMvc
 {
@@ -25,12 +28,14 @@ namespace NetCoreMvc
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
-            services.AddDbContext<SchoolContext>(options =>
+            services.AddDbContext<DataContext>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+            services.AddScoped<ILogin,LoginDao>();
+            services.AddScoped<IUserInfoDao,UserInfoDao>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env,SchoolContext context)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env,DataContext context)
         {
             if (env.IsDevelopment())
             {
@@ -47,9 +52,9 @@ namespace NetCoreMvc
             {
                 routes.MapRoute(
                     name: "default",
-                    template: "{controller=Home}/{action=Index}/{id?}");
+                    template: "{controller=Login}/{action=Index}/{id?}");
             });
-            DbInitializer.Initialize(context);
+            DbInitializerNew.Initialize(context);
         }
     }
 }

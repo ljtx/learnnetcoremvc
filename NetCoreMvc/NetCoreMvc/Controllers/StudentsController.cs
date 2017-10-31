@@ -8,7 +8,7 @@ namespace NetCoreMvc.Controllers
 {
     public class StudentsController : Controller
     {
-        private readonly SchoolContext _context;
+       /* private readonly SchoolContext _context;
 
         public StudentsController(SchoolContext context)
         {
@@ -17,6 +17,6 @@ namespace NetCoreMvc.Controllers
         public async Task<ViewResult> Index()
         {
             return View(await _context.Students.ToListAsync());
-        }
+        }*/
     }
 }

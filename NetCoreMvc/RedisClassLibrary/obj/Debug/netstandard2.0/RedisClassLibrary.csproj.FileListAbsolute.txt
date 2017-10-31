@@ -1,0 +1,8 @@
+C:\learnnetcoremvc\NetCoreMvc\RedisClassLibrary\bin\Debug\netstandard2.0\RedisClassLibrary.deps.json
+C:\learnnetcoremvc\NetCoreMvc\RedisClassLibrary\bin\Debug\netstandard2.0\RedisClassLibrary.dll
+C:\learnnetcoremvc\NetCoreMvc\RedisClassLibrary\bin\Debug\netstandard2.0\RedisClassLibrary.pdb
+C:\learnnetcoremvc\NetCoreMvc\RedisClassLibrary\obj\Debug\netstandard2.0\RedisClassLibrary.csproj.CoreCompileInputs.cache
+C:\learnnetcoremvc\NetCoreMvc\RedisClassLibrary\obj\Debug\netstandard2.0\RedisClassLibrary.AssemblyInfoInputs.cache
+C:\learnnetcoremvc\NetCoreMvc\RedisClassLibrary\obj\Debug\netstandard2.0\RedisClassLibrary.AssemblyInfo.cs
+C:\learnnetcoremvc\NetCoreMvc\RedisClassLibrary\obj\Debug\netstandard2.0\RedisClassLibrary.dll
+C:\learnnetcoremvc\NetCoreMvc\RedisClassLibrary\obj\Debug\netstandard2.0\RedisClassLibrary.pdb

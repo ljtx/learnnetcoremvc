@@ -1,0 +1,46 @@
+﻿{
+  "version": "1.0.0",
+  "restore": {
+    "projectUniqueName": "C:\\learnnetcoremvc\\NetCoreMvc\\ProjectDao\\ProjectDao.csproj",
+    "projectName": "ProjectDao",
+    "projectPath": "C:\\learnnetcoremvc\\NetCoreMvc\\ProjectDao\\ProjectDao.csproj",
+    "outputPath": "C:\\learnnetcoremvc\\NetCoreMvc\\ProjectDao\\obj\\",
+    "projectStyle": "PackageReference",
+    "originalTargetFrameworks": [
+      "netstandard2.0"
+    ],
+    "frameworks": {
+      "netstandard2.0": {
+        "projectReferences": {
+          "C:\\learnnetcoremvc\\NetCoreMvc\\ProjectContracts\\ProjectContracts.csproj": {
+            "projectPath": "C:\\learnnetcoremvc\\NetCoreMvc\\ProjectContracts\\ProjectContracts.csproj"
+          }
+        }
+      }
+    }
+  },
+  "frameworks": {
+    "netstandard2.0": {
+      "dependencies": {
+        "NETStandard.Library": {
+          "suppressParent": "All",
+          "target": "Package",
+          "version": "2.0.0"
+        },
+        "Microsoft.EntityFrameworkCore": {
+          "target": "Package",
+          "version": "2.0.0"
+        },
+        "Microsoft.EntityFrameworkCore.SqlServer": {
+          "target": "Package",
+          "version": "2.0.0"
+        }
+      },
+      "imports": [
+        "net461"
+      ],
+      "assetTargetFallback": true,
+      "warn": true
+    }
+  }
+}

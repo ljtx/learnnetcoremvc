@@ -1,0 +1,42 @@
+﻿{
+  "version": "1.0.0",
+  "restore": {
+    "projectUniqueName": "C:\\learnnetcoremvc\\NetCoreMvc\\Models\\Models.csproj",
+    "projectName": "Models",
+    "projectPath": "C:\\learnnetcoremvc\\NetCoreMvc\\Models\\Models.csproj",
+    "outputPath": "C:\\learnnetcoremvc\\NetCoreMvc\\Models\\obj\\",
+    "projectStyle": "PackageReference",
+    "originalTargetFrameworks": [
+      "netstandard2.0"
+    ],
+    "frameworks": {
+      "netstandard2.0": {
+        "projectReferences": {}
+      }
+    }
+  },
+  "frameworks": {
+    "netstandard2.0": {
+      "dependencies": {
+        "NETStandard.Library": {
+          "suppressParent": "All",
+          "target": "Package",
+          "version": "2.0.0"
+        },
+        "Microsoft.EntityFrameworkCore": {
+          "target": "Package",
+          "version": "2.0.0"
+        },
+        "Microsoft.EntityFrameworkCore.SqlServer": {
+          "target": "Package",
+          "version": "2.0.0"
+        }
+      },
+      "imports": [
+        "net461"
+      ],
+      "assetTargetFallback": true,
+      "warn": true
+    }
+  }
+}

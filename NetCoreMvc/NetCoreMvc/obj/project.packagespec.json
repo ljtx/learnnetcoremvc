@@ -1,17 +1,30 @@
 ﻿{
   "version": "1.0.0",
   "restore": {
-    "projectUniqueName": "C:\\netproject\\NetCoreMvc\\NetCoreMvc\\NetCoreMvc.csproj",
+    "projectUniqueName": "C:\\learnnetcoremvc\\NetCoreMvc\\NetCoreMvc\\NetCoreMvc.csproj",
     "projectName": "NetCoreMvc",
-    "projectPath": "C:\\netproject\\NetCoreMvc\\NetCoreMvc\\NetCoreMvc.csproj",
-    "outputPath": "C:\\netproject\\NetCoreMvc\\NetCoreMvc\\obj\\",
+    "projectPath": "C:\\learnnetcoremvc\\NetCoreMvc\\NetCoreMvc\\NetCoreMvc.csproj",
+    "outputPath": "C:\\learnnetcoremvc\\NetCoreMvc\\NetCoreMvc\\obj\\",
     "projectStyle": "PackageReference",
     "originalTargetFrameworks": [
       "netcoreapp2.0"
     ],
     "frameworks": {
       "netcoreapp2.0": {
-        "projectReferences": {}
+        "projectReferences": {
+          "C:\\learnnetcoremvc\\NetCoreMvc\\Models\\Models.csproj": {
+            "projectPath": "C:\\learnnetcoremvc\\NetCoreMvc\\Models\\Models.csproj"
+          },
+          "C:\\learnnetcoremvc\\NetCoreMvc\\ProjectContracts\\ProjectContracts.csproj": {
+            "projectPath": "C:\\learnnetcoremvc\\NetCoreMvc\\ProjectContracts\\ProjectContracts.csproj"
+          },
+          "C:\\learnnetcoremvc\\NetCoreMvc\\ProjectDao\\ProjectDao.csproj": {
+            "projectPath": "C:\\learnnetcoremvc\\NetCoreMvc\\ProjectDao\\ProjectDao.csproj"
+          },
+          "C:\\learnnetcoremvc\\NetCoreMvc\\RedisClassLibrary\\RedisClassLibrary.csproj": {
+            "projectPath": "C:\\learnnetcoremvc\\NetCoreMvc\\RedisClassLibrary\\RedisClassLibrary.csproj"
+          }
+        }
       }
     }
   },
@@ -26,7 +39,12 @@
           "target": "Package",
           "version": "2.0.0"
         }
-      }
+      },
+      "imports": [
+        "net461"
+      ],
+      "assetTargetFallback": true,
+      "warn": true
     }
   }
 }

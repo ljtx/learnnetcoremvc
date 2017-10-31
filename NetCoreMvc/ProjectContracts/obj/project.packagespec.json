@@ -1,0 +1,38 @@
+﻿{
+  "version": "1.0.0",
+  "restore": {
+    "projectUniqueName": "C:\\learnnetcoremvc\\NetCoreMvc\\ProjectContracts\\ProjectContracts.csproj",
+    "projectName": "ProjectContracts",
+    "projectPath": "C:\\learnnetcoremvc\\NetCoreMvc\\ProjectContracts\\ProjectContracts.csproj",
+    "outputPath": "C:\\learnnetcoremvc\\NetCoreMvc\\ProjectContracts\\obj\\",
+    "projectStyle": "PackageReference",
+    "originalTargetFrameworks": [
+      "netstandard2.0"
+    ],
+    "frameworks": {
+      "netstandard2.0": {
+        "projectReferences": {
+          "C:\\learnnetcoremvc\\NetCoreMvc\\Models\\Models.csproj": {
+            "projectPath": "C:\\learnnetcoremvc\\NetCoreMvc\\Models\\Models.csproj"
+          }
+        }
+      }
+    }
+  },
+  "frameworks": {
+    "netstandard2.0": {
+      "dependencies": {
+        "NETStandard.Library": {
+          "suppressParent": "All",
+          "target": "Package",
+          "version": "2.0.0"
+        }
+      },
+      "imports": [
+        "net461"
+      ],
+      "assetTargetFallback": true,
+      "warn": true
+    }
+  }
+}

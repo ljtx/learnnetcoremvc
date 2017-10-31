@@ -4746,6 +4746,58 @@
         "runtime": {
           "lib/netstandard1.3/Microsoft.WindowsAzure.Storage.dll": {}
         }
+      },
+      "Models/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "2.0.0",
+          "Microsoft.EntityFrameworkCore.SqlServer": "2.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Models.dll": {}
+        }
+      },
+      "ProjectContracts/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Models": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ProjectContracts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ProjectContracts.dll": {}
+        }
+      },
+      "ProjectDao/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "2.0.0",
+          "Microsoft.EntityFrameworkCore.SqlServer": "2.0.0",
+          "ProjectContracts": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ProjectDao.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ProjectDao.dll": {}
+        }
+      },
+      "RedisClassLibrary/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/RedisClassLibrary.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/RedisClassLibrary.dll": {}
+        }
       }
     }
   },
@@ -12524,30 +12576,50 @@
         "windowsazure.storage.8.1.4.nupkg.sha512",
         "windowsazure.storage.nuspec"
       ]
+    },
+    "Models/1.0.0": {
+      "type": "project",
+      "path": "../Models/Models.csproj",
+      "msbuildProject": "../Models/Models.csproj"
+    },
+    "ProjectContracts/1.0.0": {
+      "type": "project",
+      "path": "../ProjectContracts/ProjectContracts.csproj",
+      "msbuildProject": "../ProjectContracts/ProjectContracts.csproj"
+    },
+    "ProjectDao/1.0.0": {
+      "type": "project",
+      "path": "../ProjectDao/ProjectDao.csproj",
+      "msbuildProject": "../ProjectDao/ProjectDao.csproj"
+    },
+    "RedisClassLibrary/1.0.0": {
+      "type": "project",
+      "path": "../RedisClassLibrary/RedisClassLibrary.csproj",
+      "msbuildProject": "../RedisClassLibrary/RedisClassLibrary.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.0": [
       "Microsoft.AspNetCore.All >= 2.0.0",
-      "Microsoft.NETCore.App >= 2.0.0"
+      "Microsoft.NETCore.App >= 2.0.0",
+      "Models >= 1.0.0",
+      "ProjectContracts >= 1.0.0",
+      "ProjectDao >= 1.0.0",
+      "RedisClassLibrary >= 1.0.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\LJ\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\LJ\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\netproject\\NetCoreMvc\\NetCoreMvc\\NetCoreMvc.csproj",
+      "projectUniqueName": "C:\\learnnetcoremvc\\NetCoreMvc\\NetCoreMvc\\NetCoreMvc.csproj",
       "projectName": "NetCoreMvc",
-      "projectPath": "C:\\netproject\\NetCoreMvc\\NetCoreMvc\\NetCoreMvc.csproj",
+      "projectPath": "C:\\learnnetcoremvc\\NetCoreMvc\\NetCoreMvc\\NetCoreMvc.csproj",
       "packagesPath": "C:\\Users\\LJ\\.nuget\\packages\\",
-      "outputPath": "C:\\netproject\\NetCoreMvc\\NetCoreMvc\\obj\\",
+      "outputPath": "C:\\learnnetcoremvc\\NetCoreMvc\\NetCoreMvc\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
         "C:\\Users\\LJ\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
@@ -12555,17 +12627,26 @@
         "netcoreapp2.0"
       ],
       "sources": {
-        "https://api.nuget.org/v3/index.json": {}
+        "https://api.nuget.org/v3/index.json": {},
+        "https://nuget.cnblogs.com/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp2.0": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\learnnetcoremvc\\NetCoreMvc\\Models\\Models.csproj": {
+              "projectPath": "C:\\learnnetcoremvc\\NetCoreMvc\\Models\\Models.csproj"
+            },
+            "C:\\learnnetcoremvc\\NetCoreMvc\\ProjectContracts\\ProjectContracts.csproj": {
+              "projectPath": "C:\\learnnetcoremvc\\NetCoreMvc\\ProjectContracts\\ProjectContracts.csproj"
+            },
+            "C:\\learnnetcoremvc\\NetCoreMvc\\ProjectDao\\ProjectDao.csproj": {
+              "projectPath": "C:\\learnnetcoremvc\\NetCoreMvc\\ProjectDao\\ProjectDao.csproj"
+            },
+            "C:\\learnnetcoremvc\\NetCoreMvc\\RedisClassLibrary\\RedisClassLibrary.csproj": {
+              "projectPath": "C:\\learnnetcoremvc\\NetCoreMvc\\RedisClassLibrary\\RedisClassLibrary.csproj"
+            }
+          }
         }
-      },
-      "warningProperties": {
-        "warnAsError": [
-          "NU1605"
-        ]
       }
     },
     "frameworks": {
@@ -12573,8 +12654,7 @@
         "dependencies": {
           "Microsoft.NETCore.App": {
             "target": "Package",
-            "version": "2.0.0",
-            "autoReferenced": true
+            "version": "2.0.0"
           },
           "Microsoft.AspNetCore.All": {
             "target": "Package",

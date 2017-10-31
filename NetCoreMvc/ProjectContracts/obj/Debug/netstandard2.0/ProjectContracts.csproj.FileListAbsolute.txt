@@ -1,0 +1,10 @@
+C:\learnnetcoremvc\NetCoreMvc\ProjectContracts\bin\Debug\netstandard2.0\ProjectContracts.deps.json
+C:\learnnetcoremvc\NetCoreMvc\ProjectContracts\bin\Debug\netstandard2.0\ProjectContracts.dll
+C:\learnnetcoremvc\NetCoreMvc\ProjectContracts\bin\Debug\netstandard2.0\ProjectContracts.pdb
+C:\learnnetcoremvc\NetCoreMvc\ProjectContracts\bin\Debug\netstandard2.0\Models.dll
+C:\learnnetcoremvc\NetCoreMvc\ProjectContracts\bin\Debug\netstandard2.0\Models.pdb
+C:\learnnetcoremvc\NetCoreMvc\ProjectContracts\obj\Debug\netstandard2.0\ProjectContracts.csproj.CoreCompileInputs.cache
+C:\learnnetcoremvc\NetCoreMvc\ProjectContracts\obj\Debug\netstandard2.0\ProjectContracts.AssemblyInfoInputs.cache
+C:\learnnetcoremvc\NetCoreMvc\ProjectContracts\obj\Debug\netstandard2.0\ProjectContracts.AssemblyInfo.cs
+C:\learnnetcoremvc\NetCoreMvc\ProjectContracts\obj\Debug\netstandard2.0\ProjectContracts.dll
+C:\learnnetcoremvc\NetCoreMvc\ProjectContracts\obj\Debug\netstandard2.0\ProjectContracts.pdb
